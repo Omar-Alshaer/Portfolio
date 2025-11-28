@@ -712,7 +712,7 @@ function copyEmail() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.querySelector('.btn-submit');
     const btnText = document.querySelector('.btn-text');
@@ -721,19 +721,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const copyEmailBtn = document.getElementById('copyEmailBtn');
 
     // Form submission with Formspree
-    contactForm.addEventListener('submit', async function(e) {
+    contactForm.addEventListener('submit', async function (e) {
         e.preventDefault();
-        
+
         // Check HTML5 validation first
         if (!this.checkValidity()) {
             this.reportValidity();
             return;
         }
-        
+
 
         try {
             const formData = new FormData(contactForm);
-            
+
             const response = await fetch('https://formspree.io/f/meozbalb', {
                 method: 'POST',
                 body: formData,
@@ -741,7 +741,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Accept': 'application/json'
                 }
             });
-            
+
             if (response.ok) {
                 formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! Thank you.';
                 formMessage.className = 'form-message success';
@@ -763,7 +763,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Copy email functionality
     if (copyEmailBtn) {
-        copyEmailBtn.addEventListener('click', function() {
+        copyEmailBtn.addEventListener('click', function () {
             const email = 'omar.reda.shaer@gmail.com';
             navigator.clipboard.writeText(email).then(() => {
                 const originalText = this.querySelector('span').textContent;
@@ -805,11 +805,11 @@ function setCurrentYear() {
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const target = document.getElementById(targetId);
-        
+
         if (target) {
             target.scrollIntoView({ behavior: 'smooth' });
             // URL نظيف تماماً بدون hash
