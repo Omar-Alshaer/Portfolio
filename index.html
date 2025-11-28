@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - AUTO-FILLED FROM CV -->
+    <title>Omar Reda Elshaer | Software Engineering Student</title>
+    <meta name="description"
+        content="Software Engineering student with hands-on experience in full-stack development, data engineering, and student community leadership. Based in Alexandria, Egypt.">
+    <meta name="keywords"
+        content="Omar Elshaer, Software Engineer, Full-Stack Developer, Data Engineer, React, Python, JavaScript, Alexandria, Egypt">
+    <meta name="author" content="Omar Reda Elshaer">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Omar Reda Elshaer | Software Engineering Student">
+    <meta property="og:description"
+        content="Software Engineering student specializing in full-stack development and data engineering.">
+    <meta property="og:image" content="assets/profile.png">
+    <!-- UPDATE: Add full URL after hosting -->
+    <meta property="og:url" content="https://omar-alshaer.github.io">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Omar Reda Elshaer | Software Engineering Student">
+    <meta name="twitter:description"
+        content="Software Engineering student specializing in full-stack development and data engineering.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/profile.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Omar Elshaer - Home">
+                <span class="logo-text">devOmar</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certifications</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <i class="fas fa-sun" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="800">
+                <!-- REPLACE: Update with actual profile photo -->
+                <img src="assets/profile.png" alt="Omar Reda Elshaer - Software Engineering Student"
+                    class="profile-photo" loading="eager">
+                <div class="image-ring"></div>
+            </div>
+
+            <div class="hero-text">
+                <!-- AUTO-FILLED FROM CV: Name -->
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name" id="heroName">Omar Reda Elshaer</span>
+                </h1>
+
+                <!-- AUTO-FILLED FROM CV: Title -->
+                <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+
+                <!-- AUTO-FILLED FROM CV: Location -->
+                <p class="hero-location" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <span id="heroLocation">Alexandria, Egypt</span>
+                </p>
+
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+                    <!-- UPDATE: Add actual CV PDF link -->
+                    <a href="assets/Omar_Elshaer_CV.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-social" data-aos="fade-up" data-aos-delay="700">
+                    <!-- AUTO-FILLED FROM CV: Social Links -->
+                    <a href="https://www.linkedin.com/in/omar-elshaer" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn Profile" class="social-link">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Omar-Alshaer" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile" class="social-link">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:omar.reda.shaer@gmail.com" aria-label="Email" class="social-link">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </a>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">01.</span>
+                    About Me
+                </h2>
+
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                        <!-- AUTO-FILLED FROM CV: Career Objective -->
+                        <p class="about-intro">
+                            I'm a <strong>motivated Software Engineering student</strong> at Alamein International
+                            University with hands-on experience in <strong>full-stack development</strong>, <strong>data
+                                engineering</strong>, and <strong>student community leadership</strong>.
+                        </p>
+                        <p>
+                            Currently pursuing my Bachelor's degree (expected graduation 2028), I'm passionate about
+                            building scalable web applications and working with data pipelines. I serve as the
+                            <strong>Head of Web & Content</strong> at AIU Voice Club and as a <strong>Web Track
+                                Instructor</strong> at the IEEE AIU Student Branch, where I've trained 20+ students in
+                            web fundamentals.
+                        </p>
+                        <p>
+                            I'm currently a <strong>Microsoft Data Engineer Trainee</strong> through the Digital Egypt
+                            Pioneers Initiative, expanding my skills in Azure, SQL, big data, and AI for data
+                            engineering.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-number">20+</span>
+                                <span class="highlight-label">Students Trained</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">5+</span>
+                                <span class="highlight-label">Web Projects</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">91.5%</span>
+                                <span class="highlight-label">NTI Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image" data-aos="fade-left" data-aos-delay="400">
+                        <div class="image-wrapper">
+                            <img src="assets/ME.png" alt="Omar Elshaer working" loading="lazy">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">02.</span>
+                    Skills & Technologies
+                </h2>
+
+                <div class="skills-filter" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="data">Data & Cloud</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Skills are populated from JS -->
+                </div>
+
+                <!-- Languages Section -->
+                <div class="languages-section" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="subsection-title">Languages</h3>
+                    <div class="languages-grid">
+                        <!-- AUTO-FILLED FROM CV: Languages -->
+                        <div class="language-item">
+                            <span class="language-name">Arabic</span>
+                            <span class="language-level">Native</span>
+                            <div class="language-bar">
+                                <div class="language-progress" data-level="100"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">Professional</span>
+                            <div class="language-bar">
+                                <div class="language-progress" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">03.</span>
+                    Experience & Education
+                </h2>
+
+                <div class="experience-tabs" data-aos="fade-up" data-aos-delay="100">
+                    <button class="tab-btn active" data-tab="experience">Experience</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Experience Timeline -->
+                    <div class="timeline experience-timeline active" id="experienceTimeline">
+                        <!-- AUTO-FILLED FROM CV: Professional Experience -->
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Head of Web & Content</h3>
+                                    <span class="timeline-company">AIU Voice Club</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Oct 2025 – Present
+                                </span>
+                                <p class="timeline-description">
+                                    Lead web and content creation initiatives. Coordinate student media projects and
+                                    manage the club's digital presence.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Leadership</span>
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">Content Strategy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Web Track Instructor & Member</h3>
+                                    <span class="timeline-company">IEEE AIU Student Branch</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Feb 2025 – Present
+                                </span>
+                                <p class="timeline-description">
+                                    Instructor & Mentor for Web Track at IEEE AIU SB. Manage web projects and delivered
+                                    structured training sessions on web fundamentals to 20+ students.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Teaching</span>
+                                    <span class="tag">Mentoring</span>
+                                    <span class="tag">Web Development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Microsoft Data Engineer Trainee</h3>
+                                    <span class="timeline-company">Digital Egypt Pioneers Initiative</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Jun 2025 – Present
+                                </span>
+                                <p class="timeline-description">
+                                    Completed multiple courses and projects in SQL, Azure, big data, and AI for data
+                                    engineering. Working towards Microsoft Azure Data Engineer Associate certification.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Azure</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">Big Data</span>
+                                    <span class="tag">Data Pipelines</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Software Tester</h3>
+                                    <span class="timeline-company">Alamein International University</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Jun 2025 – Sep 2025
+                                </span>
+                                <p class="timeline-description">
+                                    Tested the university's admission platform to ensure functionality, reliability, and
+                                    optimal user experience.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">QA Testing</span>
+                                    <span class="tag">Bug Tracking</span>
+                                    <span class="tag">UX Testing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Python Programming Training</h3>
+                                    <span class="timeline-company">National Telecommunication Institute (NTI)</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Jul 2025 – Aug 2025
+                                </span>
+                                <p class="timeline-description">
+                                    Completed 120 hours of intensive training (90 technical + 30 freelancing). Achieved
+                                    certificate with 91.5% score.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">91.5%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Scientific & Technology Committee Member</h3>
+                                    <span class="timeline-company">AIU Student Union</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Nov 2024 – Present
+                                </span>
+                                <p class="timeline-description">
+                                    Participate in organizing student tech events and activities. Contribute to
+                                    fostering innovation and technical engagement on campus.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Event Organization</span>
+                                    <span class="tag">Student Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Timeline -->
+                    <div class="timeline education-timeline" id="educationTimeline">
+                        <!-- AUTO-FILLED FROM CV: Education -->
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Bachelor of Science in Software Engineering</h3>
+                                    <span class="timeline-company">Alamein International University</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    Aug 2024 – Present (Expected 2028)
+                                </span>
+                                <p class="timeline-description">
+                                    Faculty of Computer Science & Engineering. Focusing on software development, data
+                                    structures, algorithms, and modern web technologies.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Software Engineering</span>
+                                    <span class="tag">Computer Science</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item award" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Young Innovator National Competition</h3>
+                                    <span class="timeline-company">2nd Place in Web Design</span>
+                                </div>
+                                <span class="timeline-date">
+                                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                                    2021
+                                </span>
+                                <p class="timeline-description">
+                                    Achieved 2nd place nationally in web design competition, demonstrating early passion
+                                    and skill in web development.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Award</span>
+                                    <span class="tag">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">04.</span>
+                    Projects
+                </h2>
+
+                <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="data">Data & Backend</button>
+                    <button class="filter-btn" data-filter="tools">Tools & Systems</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects are populated from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section certifications" id="certifications">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">05.</span>
+                    Certifications & Courses
+                </h2>
+
+                <div class="certs-container">
+                    <!-- DEPI Certifications -->
+                    <div class="cert-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="cert-category-title">
+                            <i class="fas fa-microsoft" aria-hidden="true"></i>
+                            Digital Egypt Pioneers Initiative (DEPI)
+                        </h3>
+                        <div class="certs-grid" id="depiCerts">
+                            <!-- Populated from JS -->
+                        </div>
+                    </div>
+
+                    <!-- Coursera Certifications -->
+                    <div class="cert-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="cert-category-title">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            Coursera & Online Platforms
+                        </h3>
+                        <div class="certs-grid" id="courseraCerts">
+                            <!-- Populated from JS -->
+                        </div>
+                    </div>
+
+                    <!-- Competitions -->
+                    <div class="cert-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="cert-category-title">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                            Competitions & Awards
+                        </h3>
+                        <div class="certs-grid" id="competitionCerts">
+                            <!-- Populated from JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">06.</span>
+                    Get In Touch
+                </h2>
+
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                        <h3 class="contact-heading">Let's Connect!</h3>
+                        <p class="contact-text">
+                            I'm currently seeking opportunities to apply my technical and problem-solving skills in real
+                            projects. Whether you have a question, a project idea, or just want to say hello, feel free
+                            to reach out!
+                        </p>
+
+                        <div class="contact-details">
+                            <!-- AUTO-FILLED FROM CV: Contact Info -->
+                            <a href="mailto:omar.reda.shaer@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-item-content">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value" id="contactEmail">omar.reda.shaer@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+201283548248" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-item-content">
+                                    <span class="contact-label">Phone</span>
+                                    <span class="contact-value">+20 12 835 482 48</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-item-content">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Alexandria, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/omar-elshaer" target="_blank" rel="noopener noreferrer"
+                                class="social-btn linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Omar-Alshaer" target="_blank" rel="noopener noreferrer"
+                                class="social-btn github" aria-label="GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required minlength="2"
+                                    autocomplete="name">
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required
+                                    autocomplete="email">
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required
+                                    minlength="3">
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" required
+                                    minlength="10" rows="5"></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading">
+                                        <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                    </span>
+                                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-secondary btn-copy" id="copyEmailBtn"
+                                    aria-label="Copy email address">
+                                    <i class="fas fa-copy" aria-hidden="true"></i>
+                                    <span>Copy Email</span>
+                                </button>
+                            </div>
+
+                            <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">devOmar</span>
+                    <p class="footer-tagline">Software Engineering Student</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/omar-elshaer" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Omar-Alshaer" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:omar.reda.shaer@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © <span id="currentYear"></span> Omar Reda Elshaer. All rights reserved.
+                </p>
+                <p class="footer-credits">
+                    Built with <i class="fas fa-heart" aria-hidden="true"></i> using vanilla HTML, CSS & JS
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+        aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImage" loading="lazy">
+                </div>
+                <div class="modal-body">
+                    <h3 class="modal-title" id="modalTitle"></h3>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-tech" id="modalTech"></div>
+                    <div class="modal-links" id="modalLinks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
