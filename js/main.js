@@ -20,7 +20,7 @@ const portfolioData = {
 
     // === SOCIAL LINKS (AUTO-FILLED FROM CV) ===
     social: {
-        linkedin: "https://www.linkedin.com/in/omar-elshaer",
+        linkedin: "https://www.linkedin.com/in/omar-r-shaer/",
         github: "https://github.com/Omar-Alshaer"
     },
 
