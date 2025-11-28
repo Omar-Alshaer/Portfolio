@@ -803,3 +803,21 @@ function setCurrentYear() {
         elements.currentYear.textContent = new Date().getFullYear();
     }
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            // URL نظيف تماماً بدون hash
+            window.history.replaceState(null, '', window.location.pathname);
+        }
+    });
+});
+
+window.addEventListener('hashchange', () => {
+    window.history.replaceState(null, '', window.location.pathname);
+});
