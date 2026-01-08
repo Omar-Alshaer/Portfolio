@@ -11,8 +11,24 @@
 
 <!-- Cyber Typing Effect with Multiple Lines -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=1000&color=667EEA&background=0D111700&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=150&lines=🚀+Building+Real+Digital+Experiences;🌐+Leading+Web+Development+Community;⚡+From+Code+to+Impact;📊+Mastering+Full-Stack+%26+Data+Engineering" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?
+font=JetBrains+Mono
+&weight=800
+&size=28
+&duration=3000
+&pause=1000
+&color=667EEA
+&background=0D111700
+&center=true
+&vCenter=true
+&multiline=true
+&repeat=true
+&width=900
+&height=150
+&lines=🚀+Building+Real+Digital+Experiences;🌐+Leading+Web+Development+Community;⚡+From+Code+to+Impact;📊+Mastering+Full-Stack+%26+Data+Engineering"
+  />
 </a>
+
 
 <!-- Futuristic Social Badges -->
 <p align="center">
