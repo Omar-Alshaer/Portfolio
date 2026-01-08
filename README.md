@@ -10,23 +10,7 @@
 </picture>
 
 <!-- Cyber Typing Effect with Multiple Lines -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?
-font=JetBrains+Mono
-&weight=800
-&size=28
-&duration=3000
-&pause=1000
-&color=667EEA
-&background=0D111700
-&center=true
-&vCenter=true
-&multiline=true
-&repeat=true
-&width=900
-&height=150
-&lines=🚀+Building+Real+Digital+Experiences;🌐+Leading+Web+Development+Community;⚡+From+Code+to+Impact;📊+Mastering+Full-Stack+%26+Data+Engineering"/>
-</a>
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=1000&color=667EEA&background=0D111700&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=150&lines=%F0%9F%9A%80+Building+Real+Digital+Experiences;%F0%9F%8C%90+Leading+Web+Development+Community;%E2%9A%A1+From+Code+to+Impact;%F0%9F%93%8A+Mastering+Full-Stack+%26+Data+Engineering)
 
 
 <!-- Futuristic Social Badges -->
@@ -1196,4 +1180,5 @@ for goal, target in goals_2026.items():
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,11,20&height=150&section=footer&animation=twinkling&fontColor=fff"/>
 
 </div>
+
 
