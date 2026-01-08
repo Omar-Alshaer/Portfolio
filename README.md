@@ -25,8 +25,7 @@ font=JetBrains+Mono
 &repeat=true
 &width=900
 &height=150
-&lines=🚀+Building+Real+Digital+Experiences;🌐+Leading+Web+Development+Community;⚡+From+Code+to+Impact;📊+Mastering+Full-Stack+%26+Data+Engineering"
-  />
+&lines=🚀+Building+Real+Digital+Experiences;🌐+Leading+Web+Development+Community;⚡+From+Code+to+Impact;📊+Mastering+Full-Stack+%26+Data+Engineering"/>
 </a>
 
 
@@ -1197,3 +1196,4 @@ for goal, target in goals_2026.items():
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,11,20&height=150&section=footer&animation=twinkling&fontColor=fff"/>
 
 </div>
+
