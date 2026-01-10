@@ -8,17 +8,17 @@
 // ========================================
 
 const portfolioData = {
-    // === PERSONAL INFO (AUTO-FILLED FROM CV) ===
+    // === PERSONAL INFO ===
     name: "Omar Reda Elshaer",
     title: "Software Engineering Student",
     tagline: "Full-Stack & Data Engineering Enthusiast",
     location: "Alexandria, Egypt",
 
-    // === CONTACT INFO (AUTO-FILLED FROM CV) ===
+    // === CONTACT INFO ===
     email: "omar.reda.shaer@gmail.com",
     phone: "+20 12 835 482 48",
 
-    // === SOCIAL LINKS (AUTO-FILLED FROM CV) ===
+    // === SOCIAL LINKS ===
     social: {
         linkedin: "https://www.linkedin.com/in/omar-r-shaer/",
         github: "https://github.com/Omar-Alshaer"
@@ -33,7 +33,7 @@ const portfolioData = {
         "Microsoft Data Engineer Trainee"
     ],
 
-    // === SKILLS (AUTO-FILLED FROM CV) ===
+    // === SKILLS ===
     skills: [
         // Frontend Skills
         { name: "HTML5 & CSS3", level: 95, category: "frontend", icon: "fab fa-html5" },
@@ -66,7 +66,7 @@ const portfolioData = {
         { name: "PyQt / JavaFX", level: 75, category: "tools", icon: "fas fa-window-maximize" }
     ],
 
-    // === PROJECTS (AUTO-FILLED FROM CV) ===
+    // === PROJECTS ===
     projects: [
         {
             id: 1,
@@ -143,7 +143,7 @@ const portfolioData = {
 
     ],
 
-    // === CERTIFICATIONS (AUTO-FILLED FROM CV) ===
+    // === CERTIFICATIONS ===
     certifications: {
         depi: [
             { name: "Microsoft Data Engineer (Ongoing)", issuer: "DEPI", icon: "fab fa-microsoft" },
@@ -820,4 +820,51 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 window.addEventListener('hashchange', () => {
     window.history.replaceState(null, '', window.location.pathname);
+});
+
+
+// 🔥 Universal Counter Animation
+function initCounters() {
+  const counters = document.querySelectorAll('.counter-number[data-target], [data-target]');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const targets = entry.target.querySelectorAll('[data-target]');
+        targets.forEach(target => {
+          if (!target.classList.contains('counted')) {
+            const finalValue = parseInt(target.dataset.target);
+            const suffix = target.dataset.suffix || '';
+            const duration = parseInt(target.dataset.duration) || 2000;
+            let startValue = 0;
+            const increment = finalValue / (duration / 16);
+            
+            const updateCounter = () => {
+              startValue += increment;
+              if (startValue < finalValue) {
+                target.textContent = Math.floor(startValue) + suffix;
+                requestAnimationFrame(updateCounter);
+              } else {
+                target.textContent = finalValue + suffix;
+              }
+            };
+            
+            updateCounter();
+            target.classList.add('counter-animate', 'counted');
+          }
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.7 });
+  
+  // راقب الـ sections
+  const sections = document.querySelectorAll('.about-highlights, .skills-grid, .languages-grid');
+  sections.forEach(section => observer.observe(section));
+}
+
+// في DOMContentLoaded أضف:
+document.addEventListener('DOMContentLoaded', () => {
+  // باقي الكود...
+  initCounters(); // 🔥 أضف هنا
 });
